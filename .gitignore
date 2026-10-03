@@ -1,0 +1,54 @@
+# 源码目录
+kernel/
+uboot/
+busybox/
+crosstool-ng/
+
+# 编译中间文件
+*.o
+*.a
+*.ko
+*.cmd
+*.d
+*.su
+*.mod
+*.mod.c
+*.symvers
+*.order
+
+# artifacts 下的所有二进制（保留 README.md 和 .gitignore）
+artifacts/*.bin
+artifacts/*.dtb
+artifacts/*.ext4
+artifacts/*.map
+artifacts/*.srec
+artifacts/*.img
+artifacts/zImage
+artifacts/u-boot
+artifacts/busybox
+artifacts/*.config
+
+# rootfs
+rootfs/
+rootfs.ext4
+
+# 下载的压缩包
+*.tar.xz
+*.tar.bz2
+*.tar.gz
+*.zip
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*~
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.log
+*.tmp
+cleanup-manifest-*.txt
